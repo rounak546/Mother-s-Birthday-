@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>শুভ জন্মদিন, মা</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7b733;--ink:#1c2541;--paper:#fff6dc;--accent:#b3261e;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#e9a620;--ink:#161d36;--paper:#fff1cc}}
+:root[data-theme="dark"]{--bg:#e9a620;--ink:#161d36;--paper:#fff1cc}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Serif Bengali","Hind Siliguri",Georgia,serif;font-size:1.15rem;line-height:1.9}
+.hero{min-height:100vh;min-height:100svh;display:grid;place-items:center;text-align:center;padding:2rem 1.25rem 4rem;position:relative}
+.greet{margin:0;font-weight:800;font-size:clamp(3.2rem,16vw,9rem);line-height:1.3;animation:in 1.4s ease both}
+.ma,.num,.qed{all:unset;cursor:pointer}
+.ma:focus-visible,.num:focus-visible,.qed:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.sub{display:block;font-weight:600;font-size:clamp(1.15rem,4.5vw,1.9rem);line-height:1.6;margin-top:1rem}
+.num{font-weight:800}
+.fact{max-width:32rem;margin:1.5rem auto 0;padding:1rem 1.25rem;background:var(--paper);border-left:4px solid var(--accent);font-size:1.05rem;line-height:1.8;text-align:left}
+.fact[hidden]{display:none}
+@keyframes in{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+.scroll{position:absolute;bottom:1.5rem;left:0;right:0}
+.hero{background-image:radial-gradient(rgba(255,255,255,.45) 3px,transparent 4px),radial-gradient(rgba(179,38,30,.16) 2px,transparent 3px);background-size:34px 34px,34px 34px;background-position:0 0,17px 17px}
+.hero::before{content:"";position:absolute;top:0;left:0;right:0;height:2.6rem;background:conic-gradient(from -30deg at 16.67% 100%,#b3261e 0 60deg,transparent 0) 0 0/9rem 2.6rem repeat-x,conic-gradient(from -30deg at 50% 100%,#1c2541 0 60deg,transparent 0) 0 0/9rem 2.6rem repeat-x,conic-gradient(from -30deg at 83.33% 100%,#fff6dc 0 60deg,transparent 0) 0 0/9rem 2.6rem repeat-x}
+.hero>div:first-of-type{position:relative;z-index:1}
+.balloons{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.bl{all:unset;position:absolute;bottom:-4rem;font-size:2.4rem;cursor:pointer;pointer-events:auto;animation:rise 14s linear infinite}
+.bl:focus-visible{outline:2px solid var(--ink)}
+@keyframes rise{0%{transform:translate(0,0)}50%{transform:translate(22px,-60vh)}100%{transform:translate(-12px,-120vh)}}
+.pb{all:unset;cursor:pointer}
+.pb:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+#pfact{background:var(--bg);margin:0 0 1.15rem}
+.rain{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:20}
+.rain span{position:absolute;top:-2rem;font-size:1.8rem;animation:fall linear forwards}
+main{background:var(--paper);padding:4rem 1.25rem 5rem}
+article{max-width:36rem;margin:0 auto}
+.big{font-weight:800;font-size:clamp(1.8rem,7vw,2.8rem);line-height:1.5;margin:0 0 1.5rem}
+h2{font-weight:800;font-size:clamp(1.4rem,5vw,1.9rem);line-height:1.5;margin:3.25rem 0 1rem}
+p{margin:0 0 1.15rem}
+.quote{font-weight:600;font-size:1.3rem;line-height:1.7;margin:1.75rem 0;padding-left:1.25rem;border-left:4px solid var(--accent)}
+.sign{margin-top:3rem;font-weight:600}
+.qed{display:inline-block;font-size:1.1rem;opacity:.35;padding:.5rem;margin-left:.25rem}
+.qed:hover,.qed:focus-visible{opacity:1}
+.hint{font-size:1.15rem;font-weight:800;margin-top:2rem}
+.proof{margin-top:1.5rem;padding:1.25rem 1.5rem;border-left:4px solid var(--accent);background:var(--bg)}
+.proof[hidden]{display:none}
+.petals{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:20}
+.petals span{position:absolute;top:-2rem;font-size:1.8rem;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.bl{animation:none;bottom:20%}.greet{animation:none}.petals span{animation-duration:.01s!important}}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="balloons" aria-hidden="false">
+    <button class="bl" type="button" aria-label="বেলুন ফাটাও" style="left:6%;animation-delay:-2s">🎈</button>
+    <button class="bl" type="button" aria-label="বেলুন ফাটাও" style="left:22%;animation-delay:-9s;animation-duration:17s;font-size:3rem">🎈</button>
+    <button class="bl" type="button" aria-label="বেলুন ফাটাও" style="left:40%;animation-delay:-5s;animation-duration:12s">🎈</button>
+    <button class="bl" type="button" aria-label="বেলুন ফাটাও" style="left:60%;animation-delay:-12s;animation-duration:16s;font-size:2rem">🎈</button>
+    <button class="bl" type="button" aria-label="বেলুন ফাটাও" style="left:78%;animation-delay:-7s;animation-duration:13s;font-size:3rem">🎈</button>
+    <button class="bl" type="button" aria-label="বেলুন ফাটাও" style="left:90%;animation-delay:-1s;animation-duration:15s">🎈</button>
+  </div>
+  <div>
+    <h1 class="greet">শুভ জন্মদিন, <button class="ma" id="ma" type="button" aria-label="মা">মা</button>!
+      <span class="sub">পৃথিবীর সেরা মায়ের দিন, <button class="num" id="num" type="button" aria-expanded="false" aria-label="২৬">২৬</button> নভেম্বর</span></h1>
+    <div class="fact" id="fact" hidden>২৬ হলো একমাত্র সংখ্যা যা একটা পূর্ণবর্গ (২৫ = ৫²) আর একটা পূর্ণঘনের (২৭ = ৩³) ঠিক মাঝখানে বসে। এই সুন্দর তথ্যটা প্রমাণ করেছিলেন ফের্মা। তোমার জন্মদিনের তারিখটাও তোমার মতোই অদ্বিতীয়।</div>
+  </div>
+  <div class="scroll">নিচে নামো, অনেক কিছু বলার আছে</div>
+</section>
+
+<main>
+<article>
+  <p class="big">শুভ জন্মদিন, মা। আজ তোমার দিন, আসলে প্রতিটা দিনই তোমার।</p>
+  <p>আমি ভুলিনি। সারাদিন চুপ ছিলাম, কারণ তোমার জন্য এটা বানাচ্ছিলাম। তোমাকে শুভেচ্ছা জানানোর আগেই এটা তৈরি করে ফেলতে চেয়েছিলাম। সাসপেন্সের জন্য দুঃখিত।</p>
+  <p>আজ যেন তোমার ভালোবাসার সবকিছু আর ভালোবাসার মানুষগুলো তোমার পাশে থাকে, আর একটু বিশ্রামও জোটে। তুমি সবার জন্য এত কিছু করো, তাই আজ সবাই তোমার জন্য করুক।</p>
+
+  <h2>ছোটবেলা থেকে প্রশ্ন করতে শেখানোর জন্য ধন্যবাদ।</h2>
+  <p>ছোটবেলা থেকে তুমি আমাকে কখনও বলোনি যে সবাই মানে বলেই কিছু মেনে নিতে হবে। তুমি শিখিয়েছ নিয়মের পেছনের কারণটা দেখতে, কে এই নিয়ম বানিয়েছে আর কেন সেটা জিজ্ঞেস করতে, আর উত্তর জানা না থাকলেও যে ঠিক আছে, সেটা মেনে নিতে।</p>
+  <p>তোমার জন্যই আমি সামাজিক নিয়মকানুন নিয়ে প্রশ্ন তুলতে পেরেছি, নিজের মতো করে ভাবতে পেরেছি, এমনকি যখন সেটা সহজ পথ ছিল না তখনও। কোনো বই থেকে শেখা জিনিসের চেয়ে এই একটা অভ্যাস আমাকে অনেক বেশি গড়েছে।</p>
+  <p class="quote">নিজের মতো করে ভাবার সাহসটা তোমার দেওয়া সবচেয়ে বড় উপহার।</p>
+
+  <h2>আমার অঙ্কের পথে পাশে থাকার জন্য ধন্যবাদ।</h2>
+  <p>অঙ্ক বেছে নেওয়াটা তুমি কখনও অদ্ভুত বা ঝুঁকিপূর্ণ মনে করতে দাওনি। যেদিনগুলোতে মনে হতো আমি শুধু ঘণ্টার পর ঘণ্টা একটা পাতার দিকে তাকিয়ে আছি, সেদিনও তুমি পাশে ছিলে আর বিশ্বাস করেছ। আমাকে কখনও বলোনি পরিচিত কিছু বেছে নিতে। তুমি আমার ওপর ভরসা রেখেছ।</p>
+  <p>আর হ্যাঁ, জানি তুমি ইতিহাস পড়াও আর আমি কোনোদিন ইতিহাস ভালোবাসিনি। এটা সহ্য করার জন্যও ধন্যবাদ। <button class="ma" id="books" type="button" aria-label="ইতিহাসের বই">😄</button> যে মানুষটার বিষয় থেকে আমি পালিয়েছি, সে-ই আমাকে সবচেয়ে বেশি শিখিয়েছে।</p>
+
+  <h2>তোমাকে যা জানাতে চাই।</h2>
+  <p>আমি সবসময় মুখে বলতে পারি না, তাই একটা আস্ত পাতা বানিয়ে ফেললাম। আমি যেভাবে ভাবি, আমি যা করার সাহস করি, সবকিছুর পেছনে তুমি আছো। আমি যা-ই করি, তাতে তোমার একটু ছোঁয়া থাকে।</p>
+  <p>আশা করি তোমাকে গর্বিত করতে পারব, মা। প্রতিদিন চেষ্টা করে যাব।</p>
+  <p><button class="pb" id="pb" type="button" aria-expanded="false"><b>শুভ জন্মদিন। আমি তোমাকে ভালোবাসি।</b></button></p>
+  <div class="fact" id="pfact" hidden>সম্ভাব্যতার ভাষায়: P(তোমার ছেলে তোমাকে ভালোবাসে) = ১। “প্রায় নিশ্চিতভাবে” নয়, একদম নিশ্চিতভাবে। এই ঘটনার কোনো ব্যতিক্রম নেই।</div>
+
+  <p class="sign">অনেক ভালোবাসা সহ,<br>তোমার ছেলে
+  <button class="qed" id="qed" type="button" aria-label="লুকোনো প্রমাণ খোলো" aria-expanded="false">∎</button></p>
+
+  <div class="proof" id="proof" hidden>
+    <p><b>উপপাদ্য।</b> মা পৃথিবীর সেরা মা।</p>
+    <p><b>প্রমাণ।</b> ধরি তা নয়। তাহলে আরেকজন মা আরও ভালো। কিন্তু আরও ভালো মা তার ছেলেকে এই দাবিটা নিয়েও প্রশ্ন করতে শেখাতেন। আমি প্রশ্ন করেছি, ভালো করে যাচাই করেছি, আর দাবিটা টিকে গেছে। বিরোধ। ∎</p>
+    <p>গণিতবিদরা প্রমাণের শেষে এই ছোট বর্গটা বসান। তুমি খুঁজে পেয়েছ।</p>
+  </div>
+
+  <p class="hint">এই পাতায় ছয়টা জিনিস লুকোনো আছে। খুঁজে পাও কি না দেখো।</p>
+</article>
+</main>
+<div class="petals" id="petals" aria-hidden="true"></div>
+
+<script>
+(function(){
+  function toggle(btn,box,scroll){
+    btn.addEventListener('click',function(){
+      var open=box.hidden;
+      box.hidden=!open;
+      btn.setAttribute('aria-expanded',String(open));
+      if(open&&scroll){box.scrollIntoView({behavior:'smooth',block:'center'});}
+    });
+  }
+  toggle(document.getElementById('qed'),document.getElementById('proof'),true);
+  toggle(document.getElementById('num'),document.getElementById('fact'),false);
+  var petals=document.getElementById('petals');
+  document.getElementById('ma').addEventListener('click',function(){
+    var e=['🌼','🏵️','🌸'];
+    for(var i=0;i<36;i++){
+      var s=document.createElement('span');
+      s.textContent=e[i%e.length];
+      s.style.left=(Math.random()*100)+'%';
+      s.style.animationDuration=(3+Math.random()*3)+'s';
+      s.style.animationDelay=(Math.random()*1.2)+'s';
+      petals.appendChild(s);
+    }
+    setTimeout(function(){petals.innerHTML='';},7500);
+  });
+  var rainBox=document.createElement('div');
+  rainBox.className='rain';rainBox.setAttribute('aria-hidden','true');
+  document.body.appendChild(rainBox);
+  function rain(e,n){
+    for(var i=0;i<n;i++){
+      var s=document.createElement('span');
+      s.textContent=e[i%e.length];
+      s.style.left=(Math.random()*100)+'%';
+      s.style.animationDuration=(3+Math.random()*3)+'s';
+      s.style.animationDelay=(Math.random()*1.2)+'s';
+      s.addEventListener('animationend',function(){this.remove();});
+      rainBox.appendChild(s);
+    }
+  }
+  toggle(document.getElementById('pb'),document.getElementById('pfact'),false);
+  document.getElementById('books').addEventListener('click',function(){rain(['📚','📜','🏛️'],30);});
+  Array.prototype.forEach.call(document.querySelectorAll('.bl'),function(b){
+    b.addEventListener('click',function(){
+      b.textContent='🎉';b.style.animationPlayState='paused';
+      rain(['🎊','✨'],8);
+      setTimeout(function(){b.remove();},450);
+    });
+  });
+  var buf='';
+  document.addEventListener('keydown',function(ev){
+    buf=(buf+ev.key).slice(-3).toLowerCase();
+    if(buf==='maa'){rain(['🎉','🎊','🌼','🎂'],40);}
+  });
+  try{console.log('শুভ জন্মদিন, মা! ডেভেলপার টুল পর্যন্ত খুঁজে ফেলেছ, তুমিও কম যাও না। 🎂');}catch(x){}
+})();
+</script>
+</body>
+</html>
